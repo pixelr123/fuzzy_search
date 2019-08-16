@@ -1,0 +1,13 @@
+{% if words.count > 0 %}
+
+{% for word in words %}
+
+<li><a href="/search?word={{ word.name }}">{{ word.name }}</a></li>
+
+{% endfor %}
+
+{% else %}
+
+<li>None to show!</li>
+
+{% endif %}
