@@ -1,1 +1,1 @@
-web: gunicorn FuzzySearch.wsgi
+web: gunicorn FuzzySearch.wsgi --log-file -
